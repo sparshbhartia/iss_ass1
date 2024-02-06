@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <title>My Blog</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>First Blog Post</h2>
+            <time datetime="2024-02-01">February 1, 2024</time>
+            <p>This is my first blog post. Welcome to my blog!<br><br>
+                I would like to speak about my JEE advanced day in this blog.
+                On the day of 4 th June ,2023 ,I was about to give the world's toughest exam ,the exam which I had prepared for 2 years.
+                I got very nervous and excited at the same time.After preparing and eating breakfast,I left for the centre and reached
+                there in 1 hour .The center hadn't opened yet(as usual) and I was pacing around while my dad was telling me to relax and 
+                concentrate on exam(which didn't help at all).After eternity of walking (basically 5 minutes),I entered the centre and did 
+                all the formalities and sat for the paper.After waiting for nearly an hour(because the exam was late(wait ,it reminds me of Some
+                thing ,oh yeah IIITH timings)) the exam started.Imagine all the thoughts and imaginations running through my mind,the heart racing 
+                faster then Usain Bolt.Well,none of this happened and I wrote the exam and felt it to be decent(according to my expectation) and 
+                finished it.<br><br>When I returned to my dad,he asked how it went and all and gave me some cold wipes to help me for the next exam.After 
+                eating lunch,my mind felt better and I was feeling confident about myself that I can crack JEE ADV.Boy ,was I wrong!I still feel angry
+                about the horrifying twist this exam had for me.After filling the formalities (again!),I again sat for the exam.
+                When the paper started,it turned out to be considerably tough but i went through it ,with some deep breaths and finished
+                it.Well,the day was over ,and I still couldn't believe that my JEE journey was over.Those painstaking 2 years which I will never
+                forget in my entire life.And that was the end of the day.(If you are still curious about my rank,go to the webiste and see 
+                it .There is a reason I put it there).
+                
+            </p>
+
+            <div class="likes-comments-bar">
+                <span class="likes likesPost1" onclick="increaseLikes('likesPost1')">0 Likes</span>
+                <span class="comments commentsPost1" onclick="toggleComments('commentListPost1')">0 Comments</span>
+                <div>
+                    <input type="text" class="comment-input" id="commentInputPost1" placeholder="Add a comment...">
+                    <button class="comment-submit"onclick="submitComment('commentsPost1', 'commentInputPost1', 'commentListPost1', 'commentsCountPost1')">Submit</button>
+                </div>
+                <span class="comments-count commentsCountPost1">0 Comments</span>
+                <ul class="comment-list hidden" id="commentListPost1"></ul>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <button onclick="resetLikesAndComments('likesPost1', 'commentsPost1', 'commentListPost1', 'commentsCountPost1')">Reset Likes & Comments</button>
+    </footer>
+
+    <script src="blog.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <title>My Blog</title>
+</head>
+<body>
+
+<header>
+    <h1>My Blog</h1>
+</header>
+
+<main>
+    <article>
+        <h2>Second Blog Post</h2>
+        <time datetime="2024-02-01">February 5, 2024</time>
+        <p>
+            This is my second blog post. Welcome to my blog!<br><br>
+            <h1><u>Exploring the Enchanting Charms of Hyderabad</u></h1>
+<h1>Introduction</h1>
+Hyderabad, often referred to as the "City of Pearls" or the "City of Nizams," is a fascinating blend of rich history, modernity, and cultural diversity. Situated in the heart of South India, this vibrant metropolis has something to offer for every traveler, from historic landmarks to delectable cuisine. Let's embark on a journey to uncover the enchanting charms of Hyderabad.
+
+<h2>Historical Marvels</h2>
+Charminar
+One cannot talk about Hyderabad without mentioning the iconic Charminar. Built in 1591 by Muhammad Quli Qutb Shah, this majestic monument stands as a symbol of the city. Its four grand arches, each facing a different street, lead to bustling markets offering traditional bazaars and street food.
+
+<h2>Golconda Fort</h2>
+A testament to the city's glorious past, Golconda Fort offers a breathtaking view of Hyderabad. Once known for its diamond mines, the fort's acoustic wonders and intricate architecture continue to captivate visitors.
+
+<h2>Culinary Delights</h2>
+Hyderabadi Biryani
+Hyderabad is synonymous with its delectable biryani. The aromatic blend of basmati rice, succulent meat, and fragrant spices creates a dish that has earned global acclaim. Savored in traditional Hyderabadi style, the biryani is a culinary masterpiece.
+
+<h2>Irani Chai</h2>
+A trip to Hyderabad is incomplete without experiencing the charm of Irani chai. The city boasts numerous Irani cafes where you can sip on a hot cup of tea, accompanied by Osmania biscuits, as you immerse yourself in the city's laid-back vibe.
+
+<h2>Cultural Extravaganza</h2>
+<h3>Ramoji Film City</h3>
+For Bollywood enthusiasts, Ramoji Film City is a dream come true. Recognized as the world's largest film studio complex, it offers a glimpse behind the scenes of the Indian film industry. The picturesque locales and themed attractions add a touch of magic.
+
+<h3>Laad Bazaar</h3>
+Discover the city's rich cultural heritage at Laad Bazaar, known for its intricate bangles and traditional jewelry. The vibrant market is a treasure trove of colorful accessories, attracting locals and tourists alike.
+
+<h2>Modern Marvels</h2>
+<h3>Hi-Tech City</h3>
+As a leading IT hub, Hyderabad's Hi-Tech City stands as a symbol of India's technological prowess. Skyscrapers, multinational companies, and a bustling tech culture define this modern facet of the city.
+
+<h3>Hussain Sagar Lake</h3>
+Escape the urban hustle at Hussain Sagar Lake, an artificial lake adorned with the imposing Buddha statue. The serene surroundings provide a perfect retreat, offering boat rides and stunning sunset views.
+
+<h2>Conclusion</h2>
+Hyderabad's allure lies in its ability to seamlessly blend the old and the new. Whether you're a history buff, a foodie, or a tech enthusiast, the city welcomes you with open arms. As the sun sets over the Charminar, leaving the city bathed in golden hues, you'll understand why Hyderabad is truly one of India's gems.
+
+Embark on your journey to Hyderabad, where tradition meets innovation, and history unfolds at every step.
+        </p>
+
+        <div class="likes-comments-bar">
+            <span class="likes likesPost1" onclick="increaseLikes('likesPost1')">0 Likes</span>
+            <span class="comments commentsPost1" onclick="toggleComments('commentListPost1')">0 Comments</span>
+            <div>
+                <input type="text" class="comment-input" id="commentInputPost1" placeholder="Add a comment...">
+                <button class="comment-submit" onclick="submitComment('commentsPost1', 'commentInputPost1', 'commentListPost1', 'commentsCountPost1')">Submit</button>
+            </div>
+            <span class="comments-count commentsCountPost1">0 Comments</span>
+            <ul class="comment-list hidden" id="commentListPost1"></ul>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Blog. All rights reserved.</p>
+    <button onclick="resetLikesAndComments('likesPost1', 'commentsPost1', 'commentListPost1', 'commentsCountPost1')">Reset Likes & Comments</button>
+</footer>
+
+<script src="blog.js">
+    </script>
+
+</body>
+</html>
